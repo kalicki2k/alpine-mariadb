@@ -12,7 +12,7 @@ Various env vars can be set at runtime via your docker command or docker-compose
 To use this start the container on port 3306 with:
 
 ```
-docker run -d --name mysql -p 3306:3306 kalicki2k/alpine-mariadb
+docker run -d --name mysql -p 3306:3306 -v /path/to/datadir:/var/lib/mysql kalicki2k/alpine-mariadb
 ```
 
 Or with environments:
